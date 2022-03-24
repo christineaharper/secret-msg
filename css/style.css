@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Red Hat Mono", monospace;
+  letter-spacing: 0.019rem;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 2rem;
+  color: rgb(252, 100, 113);
+}
+
+/* header */
+
+h1 {
+  text-align: center;
+  margin-top: 3.125rem;
+}
+
+.scroll__container {
+  margin: 0 auto;
+  max-width: 37.5rem;
+  height: 10vh;
+}
+
+#scroll__text {
+  width: 80%;
+  max-width: 37.25rem;
+  margin: 6.25rem auto;
+  text-align: center;
+  font-family: "Special Elite", cursive;
+}
+
+#scroll__text::after {
+  content: "";
+  margin-left: 0.188rem;
+  width: 0.125rem;
+  height: 1.25rem;
+  background: rgb(0, 0, 0);
+  opacity: 1;
+  display: inline-block;
+  animation: blink 1s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* main  */
+
+.container {
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 37.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.container.show-url {
+  justify-content: space-evenly;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 3.75rem 1.25rem;
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 0.313rem 0.5rem 0.938rem 0.125rem rgb(204, 204, 204);
+}
+
+.btn {
+  width: 6.25rem;
+  padding: 0.625rem;
+  text-transform: uppercase;
+  font-family: "Red Hat Mono", monospace;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.313rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(252, 100, 113);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(243, 142, 151);
+}
+
+label {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+input {
+  border: none;
+  border-bottom: 0.125rem solid rgb(173, 173, 173);
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 0.125rem solid rgb(252, 100, 113);
+}
+
+input::placeholder {
+  color: rgb(204, 204, 204);
+  font-size: 0.8rem;
+}
+
+/* secret message panel */
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}

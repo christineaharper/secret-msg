@@ -1,0 +1,29 @@
+ascii character codes
+- "a-z, "A-Z", "0-9", "!@#$%^&*()"" + a few others can be represented with a decimal value 0-127
+
+
+base64 character codes
+- the characters "a-z", "A-Z", "0-9" can be represented with a decimal value from 0-63
+
+binary
+ex:   
+1011001   = 89
+translates to - 1 + 8 + 16 + 64 = 89
+
+ascii to base64
+ex: "hey"
+
+step 1 - change to ascii character code
+step 2 - 8 digit binary code   01101000 01100101 01111001 
+step 3 - join together (creates 24 digit)
+step 4 - split to 6 digit binary 011010 000110 010101 111001
+step 5 - convert 6 digit to base 64 character code = "aGV5" <-- ("hey encoded to base64)
+
+
+link 
+{domain}{path}{query string}{hash/fragment}
+ex: 
+{message.com}{/index.html/}{?color=red}{#value}
+- query string communicated to server
+- value is information relevant to browser not back end server
+

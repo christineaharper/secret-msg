@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message App</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;600;700&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Super Secret Message App</h1>
+            <div class="scroll__container">
+                <p id="scroll__text"></p>
+            </div>
+        </header>
+        <main>
+
+            <div class="panel show__panel hide">
+                <h2>The secret message is:</h2>
+                <p id="secret-msg"></p>
+                <a href="./index.html">Click here to create your own secret message</a>
+            </div>
+            <form action="" id="form">
+                <div class="panel msg__panel">
+                    <label for="msg__input">Enter your message:</label>
+                    <input type="text" name="" id="msg__input" placeholder="Enter message">
+                    <button id="btn--create" class="btn">Create</button>
+                </div>
+
+                <div class="panel share__panel hide">
+                    <label for="share__input">Share this link:</label>
+                    <input type="text" id="share__input">
+                    <button id="btn--copy" class="btn">Copy</button>
+                </div>
+            </form>
+
+        </main>
+    </div>
+    <script src="./js/type.js"></script>
+    <script src="./js/msg.js"></script>
+</body>
+
+</html>
