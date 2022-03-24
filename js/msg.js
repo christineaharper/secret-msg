@@ -18,7 +18,7 @@ const message = atob(hash.replace("#", " "));
 if (message) {
   showPanel.classList.remove("hide");
   msgPanel.classList.add("hide");
-  scroll.classList.add("hidden");
+  scroll.classList.add("hide");
   secretMsg.innerText = `"${message}"`;
 }
 
