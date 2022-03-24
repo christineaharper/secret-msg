@@ -1,6 +1,6 @@
 # Super Secret Message App
 
-This secret message app allows users to share a customized link where the hash is an encoded version of a message that they would like to send to another user.
+This secret message app allows users to share a customized link where the hash is an encoded version of a message that they would like to send to another user. The hash is created using built in JS methods.
 
 ## Table of contents
 
@@ -36,7 +36,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - Flexbox
 - Mobile-first workflow
-- Vanilla JavaScript
+- JavaScript
 
 ### What I learned
 
@@ -52,6 +52,8 @@ The scrolling text effect is definitely not accessible for screen readers. I am 
 - [Typewriter Effect in JavaScript](https://www.youtube.com/watch?v=mULM6KcF_mo)
 - [MDN - window.location](https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
 - [MDN - Nested Loops & Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+- [MDN - btoa()](https://developer.mozilla.org/en-US/docs/Web/API/btoa)
+- [MDN - atob()](https://developer.mozilla.org/en-US/docs/Web/API/atob)
 
 ## Author
 
